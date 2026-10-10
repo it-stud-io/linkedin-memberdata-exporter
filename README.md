@@ -1,4 +1,4 @@
-# linkedin-feed-reader
+# linkedin-memberdata-exporter
 
 Exports the posts and activity of **your own** LinkedIn profile to JSON or CSV.
 
@@ -69,7 +69,7 @@ Useful domains: `MEMBER_SHARE_INFO` (your posts), `ARTICLES`, `ALL_COMMENTS`, `A
 
 ## Security
 
-- Everything is stored in `~/.linkedin_feed_reader/vault.json`: profile, client ID/secret
+- Everything is stored in `~/.linkedin-memberdata-exporter/vault.json`: profile, client ID/secret
   and OAuth tokens. The file is encrypted with **AES-256-GCM**, and the key is derived from
   your passphrase with **scrypt**. Use `--vault` to put it somewhere else.
 - For unattended runs you can set the passphrase in the `LFR_PASSPHRASE` environment
